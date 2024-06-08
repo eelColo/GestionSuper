@@ -1,20 +1,28 @@
 package service;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import model.Producto;
 
 public class ProductService {
-
-	public void addProduct() {
+	List<Producto> productos = new ArrayList<>();
+	public void addProduct(Producto nProduct) {
+		productos.add(nProduct);
 		
 	}
 	
-	public void deleteProduct() {
-		
+	//ForEach para listar cada producto
+	public void listAll(){
+		for(Producto p : productos) {
+			System.out.println(p);
+		}
+		System.out.println("=============================");
 	}
-	public void editProduct() {
-		
-	}
-	public Producto findProductByName() {
-		return new Producto();
+	//retorna el mas caro y mas barato
+	public void maxAndMin() {
+		System.out.println("Producto más caro: " + Collections.max(productos).getName());
+		System.out.println("Producto más barato: " + Collections.min(productos).getName());
 	}
 }

@@ -5,7 +5,7 @@ public class ProductoHigiene extends Producto{
 	private Integer contenido;
 	//Constructor y sobrecarga
 
-	public ProductoHigiene(String name, Integer price, Integer contenido) {
+	public ProductoHigiene(String name, Integer contenido, Integer price) {
 		super(name, price);
 		this.contenido = contenido;
 	}
@@ -25,7 +25,7 @@ public class ProductoHigiene extends Producto{
 	//toString mod
 	@Override
 	public String toString() {
-		return "Nombre: " + getName() + " /// Contenido: " + contenido + " /// Precio: " + getPrice();
+		return "Nombre: " + getName() + " /// Contenido: " + contenido + "ml /// Precio: " + getPrice();
 	}
 	
 }

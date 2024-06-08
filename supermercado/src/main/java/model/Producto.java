@@ -1,6 +1,6 @@
 package model;
 
-public class Producto {
+public class Producto implements Comparable<Producto>{
 	//Atributos
 	private String name;
 	private Integer price;
@@ -29,6 +29,12 @@ public class Producto {
 	@Override
 	public String toString() {
 		return "Nombre: " + name + " /// Precio: $" + price;
+	}
+	//implementando interfaz comparable y sobrescribiendo
+	@Override
+	public int compareTo(Producto o) {
+		//compara el precio del elemento que lo llama con el elemento q se lo da
+		return Integer.compare(this.price, o.price);
 	}
 	
 	

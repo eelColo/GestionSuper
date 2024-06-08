@@ -2,9 +2,9 @@ package model;
 
 public class ProductoLiquido extends Producto{
 	//Atributos
-	private Integer litros;
+	private Double litros;
 	//Constructores y sobrecarga
-	public ProductoLiquido(String name, Integer price, Integer litros) {
+	public ProductoLiquido(String name, Double litros, Integer price) {
 		super(name, price);
 		this.litros = litros;
 	}
@@ -12,10 +12,10 @@ public class ProductoLiquido extends Producto{
 		
 	}
 	//Setters y getters
-	public Integer getLitros() {
+	public Double getLitros() {
 		return litros;
 	}
-	public void setLitros(Integer litros) {
+	public void setLitros(Double litros) {
 		this.litros = litros;
 	}
 	//toString mod

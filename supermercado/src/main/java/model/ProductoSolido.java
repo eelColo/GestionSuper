@@ -5,8 +5,8 @@ public class ProductoSolido extends Producto{
 	private String unidadDeVenta;
 	//Constructores y sobrecarga
 
-	public ProductoSolido(String unidadDeVenta) {
-		super();
+	public ProductoSolido(String name, Integer price, String unidadDeVenta) {
+		super(name, price);
 		this.unidadDeVenta = unidadDeVenta;
 	}
 	public ProductoSolido() {
